@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+
+        #display{
+            height: 80px;
+            width: 340px;
+            border: 5px solid black;
+            border-radius: 10px;
+            color: red;
+            overflow:scroll;
+        }
+        .num{
+            height: 80px;
+            width: 80px;
+            background-color: gray;
+            border: 5px solid black;
+            margin: 2px;
+            color: white;
+            text-align: center;
+            top: 25px;
+            border-radius: 10px;
+        }
+        #long{
+            width: 109px;
+        }
+       
+        .num:hover{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="display">
+        <h1 class="d"></h1>
+    </div>
+    
+    <div class="division">
+        <button class="num" onclick="print('AC')">AC <div>All clear</div></button>
+        <button class="num" onclick="print('^')">^<div>Power</div></button>
+        <button class="num" onclick="print('/')">/ <div>Div</div></button>
+        <button class="num" onclick="print('*')">* <div>Mul</div></button>
+        
+    </div>
+
+    <div class="division">
+        <button class="num" onclick="print(7)">7 <div>Seven</div></button>
+        <button class="num" onclick="print(8)">8 <div>Eight</div></button>
+        <button class="num" onclick="print(9)">9 <div>Nine</div></button>
+        <button class="num" onclick="print('-')">- <div>sub</div></button>
+        
+    </div>
+
+    <div>
+        <button class="num" onclick="print(4)">4 <div>Four</div></button>
+        <button class="num" onclick="print(5)">5 <Div>Five</Div></button>
+        <button class="num" onclick="print(6)">6 <div>Six</div></button>
+        
+        
+        <button class="num" onclick="print('+')">+ <div>Add</div></button>
+        
+        <!-- <script>
+            function print(n){
+                document.querySelector('.d').textContent+=n;
+            }
+        </script> -->
+        
+    </div>
+
+    <div class="division">
+        <button class="num" onclick="print(1)">1 <div>One</div></button>
+        <button class="num" onclick="print(2)">2 <div>Two</div></button>
+        <button class="num" onclick="print(3)">3 <div>Three</div></button>
+        <button class="num" onclick="print('.')">. <div>Decimal</div></button>
+        
+    </div>
+
+<div class="division">
+    <button class="num" id="long" onclick="print('X')">X <div>Problem in back</div></button>
+    <button class="num" id="long" onclick="print(0)">0 <div>Zero</div></button>
+    
+    <button class="num" id="long" onclick="print('=')">= <div>Equal</div></button>
+
+</div>
+    <script src="calculator.js"></script>
+
+</body>
+</html>
